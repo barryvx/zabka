@@ -23,8 +23,8 @@ jobs:
           python-version: '3.12'
 
       - name: Create and start virtual environment
+        working-directory: ./chmura
         run: |
-          working-directory: ./chmura
           python -m venv venv
           source venv/bin/activate
       - name: Install dependencies
